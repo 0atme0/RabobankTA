@@ -20,7 +20,12 @@
 		50E6B97528F413DA00C839C7 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B97428F413DA00C839C7 /* Storage.swift */; };
 		50E6B97728F4141700C839C7 /* FileSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B97628F4141700C839C7 /* FileSelectionViewModel.swift */; };
 		50E6B97C28F4180600C839C7 /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B97B28F4180500C839C7 /* CSVParser.swift */; };
-		50E6B97E28F4185400C839C7 /* CSVTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B97D28F4185400C839C7 /* CSVTable.swift */; };
+		50E6B97E28F4185400C839C7 /* TableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B97D28F4185400C839C7 /* TableEntity.swift */; };
+		50E6B98228F4361700C839C7 /* TableRepresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98128F4361700C839C7 /* TableRepresentationView.swift */; };
+		50E6B98428F4362A00C839C7 /* TableRepresentationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98328F4362A00C839C7 /* TableRepresentationViewModel.swift */; };
+		50E6B98628F437D500C839C7 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98528F437D500C839C7 /* FileType.swift */; };
+		50E6B98928F437EE00C839C7 /* ParserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98828F437EE00C839C7 /* ParserFactory.swift */; };
+		50E6B98B28F4388100C839C7 /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98A28F4388100C839C7 /* ParserProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +62,12 @@
 		50E6B97428F413DA00C839C7 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		50E6B97628F4141700C839C7 /* FileSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSelectionViewModel.swift; sourceTree = "<group>"; };
 		50E6B97B28F4180500C839C7 /* CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
-		50E6B97D28F4185400C839C7 /* CSVTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTable.swift; sourceTree = "<group>"; };
+		50E6B97D28F4185400C839C7 /* TableEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableEntity.swift; sourceTree = "<group>"; };
+		50E6B98128F4361700C839C7 /* TableRepresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRepresentationView.swift; sourceTree = "<group>"; };
+		50E6B98328F4362A00C839C7 /* TableRepresentationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRepresentationViewModel.swift; sourceTree = "<group>"; };
+		50E6B98528F437D500C839C7 /* FileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileType.swift; sourceTree = "<group>"; };
+		50E6B98828F437EE00C839C7 /* ParserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserFactory.swift; sourceTree = "<group>"; };
+		50E6B98A28F4388100C839C7 /* ParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				50E6B96E28F40E9B00C839C7 /* FileSelectionView.swift */,
+				50E6B98128F4361700C839C7 /* TableRepresentationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				50E6B97628F4141700C839C7 /* FileSelectionViewModel.swift */,
+				50E6B98328F4362A00C839C7 /* TableRepresentationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -175,6 +187,8 @@
 			children = (
 				50E6B97F28F4192300C839C7 /* Entity */,
 				50E6B98028F4192B00C839C7 /* Service */,
+				50E6B98728F437DA00C839C7 /* Enum */,
+				50E6B98C28F4389100C839C7 /* Protocol */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,7 +196,7 @@
 		50E6B97F28F4192300C839C7 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				50E6B97D28F4185400C839C7 /* CSVTable.swift */,
+				50E6B97D28F4185400C839C7 /* TableEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -192,8 +206,25 @@
 			children = (
 				50E6B97428F413DA00C839C7 /* Storage.swift */,
 				50E6B97B28F4180500C839C7 /* CSVParser.swift */,
+				50E6B98828F437EE00C839C7 /* ParserFactory.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		50E6B98728F437DA00C839C7 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B98528F437D500C839C7 /* FileType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		50E6B98C28F4389100C839C7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B98A28F4388100C839C7 /* ParserProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,12 +360,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E6B98228F4361700C839C7 /* TableRepresentationView.swift in Sources */,
+				50E6B98928F437EE00C839C7 /* ParserFactory.swift in Sources */,
 				50E6B97C28F4180600C839C7 /* CSVParser.swift in Sources */,
-				50E6B97E28F4185400C839C7 /* CSVTable.swift in Sources */,
+				50E6B98428F4362A00C839C7 /* TableRepresentationViewModel.swift in Sources */,
+				50E6B97E28F4185400C839C7 /* TableEntity.swift in Sources */,
+				50E6B98628F437D500C839C7 /* FileType.swift in Sources */,
 				50E6B94228F40CC900C839C7 /* RabobankTAApp.swift in Sources */,
 				50E6B97728F4141700C839C7 /* FileSelectionViewModel.swift in Sources */,
 				50E6B96F28F40E9B00C839C7 /* FileSelectionView.swift in Sources */,
 				50E6B97528F413DA00C839C7 /* Storage.swift in Sources */,
+				50E6B98B28F4388100C839C7 /* ParserProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
