@@ -19,6 +19,8 @@
 		50E6B97328F410DE00C839C7 /* issues_big.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50E6B97228F410DD00C839C7 /* issues_big.csv */; };
 		50E6B97528F413DA00C839C7 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B97428F413DA00C839C7 /* Storage.swift */; };
 		50E6B97728F4141700C839C7 /* FileSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B97628F4141700C839C7 /* FileSelectionViewModel.swift */; };
+		50E6B97C28F4180600C839C7 /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B97B28F4180500C839C7 /* CSVParser.swift */; };
+		50E6B97E28F4185400C839C7 /* CSVTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B97D28F4185400C839C7 /* CSVTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		50E6B97228F410DD00C839C7 /* issues_big.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = issues_big.csv; sourceTree = "<group>"; };
 		50E6B97428F413DA00C839C7 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		50E6B97628F4141700C839C7 /* FileSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSelectionViewModel.swift; sourceTree = "<group>"; };
+		50E6B97B28F4180500C839C7 /* CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
+		50E6B97D28F4185400C839C7 /* CSVTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,9 +173,27 @@
 		50E6B97A28F414EC00C839C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				50E6B97428F413DA00C839C7 /* Storage.swift */,
+				50E6B97F28F4192300C839C7 /* Entity */,
+				50E6B98028F4192B00C839C7 /* Service */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		50E6B97F28F4192300C839C7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B97D28F4185400C839C7 /* CSVTable.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		50E6B98028F4192B00C839C7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B97428F413DA00C839C7 /* Storage.swift */,
+				50E6B97B28F4180500C839C7 /* CSVParser.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +329,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E6B97C28F4180600C839C7 /* CSVParser.swift in Sources */,
+				50E6B97E28F4185400C839C7 /* CSVTable.swift in Sources */,
 				50E6B94228F40CC900C839C7 /* RabobankTAApp.swift in Sources */,
 				50E6B97728F4141700C839C7 /* FileSelectionViewModel.swift in Sources */,
 				50E6B96F28F40E9B00C839C7 /* FileSelectionView.swift in Sources */,

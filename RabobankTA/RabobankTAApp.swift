@@ -11,7 +11,7 @@ import SwiftUI
 struct RabobankTAApp: App {
     var body: some Scene {
         WindowGroup {
-            FileSelectionView(viewModel: FileSelectionViewModel(storage: Storage()))
+            FileSelectionView(viewModel: FileSelectionViewModel())
         }
     }
 }

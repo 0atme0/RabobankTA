@@ -17,7 +17,7 @@ struct FileSelectionView: View {
             Menu {
                 ForEach(viewModel.fileList, id: \.self) { element in
                     Button(element.lastPathComponent) {
-                        openFile(element)
+                        viewModel.openFile(element)
                     }
                 }
             } label: {
@@ -25,11 +25,10 @@ struct FileSelectionView: View {
             }
         }
     }
-    func openFile(_ file: URL) { }
 }
 
 struct FileSelectionView_Previews: PreviewProvider {
     static var previews: some View {
-        FileSelectionView(viewModel: FileSelectionViewModel(storage: Storage()))
+        FileSelectionView(viewModel: FileSelectionViewModel())
     }
 }
