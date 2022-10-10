@@ -7,12 +7,13 @@
 
 import Foundation
 
-class CSVTableViewModel: ObservableObject {
+class TableRepresentationViewModel: ObservableObject {
     
     @Published var table: TableEntity?
     private var parser: ParserProtocol
 
-    init(fileURL: URL, parser: ParserProtocol = ParserFactory.getParser(.scv)) {
+    init(fileURL: URL, parser: ParserProtocol = ParserFactory.getParser(.csv)) {
+        print(fileURL)
         self.parser = parser
         openFile(fileURL)
     }

@@ -10,14 +10,14 @@ import Foundation
 class CSVParser: ParserProtocol {
     func parseString(_ value: String, completion: (TableEntity)->()) {
         var resultValue = [[String]]()
-        let lines = value.split(separator: "\r\n", omittingEmptySubsequences: true)
+        let rows = value.split(separator: "\r\n", omittingEmptySubsequences: true)
         
-        for (index, line) in lines.enumerated() {
-            print(index, line)
-            let columns = line.split(separator: ",", omittingEmptySubsequences: true)
+        for (index, row) in rows.enumerated() {
+            print(index, row)
+            let columns = row.split(separator: ",", omittingEmptySubsequences: true)
             let columnsArray = columns.map{String($0)}
             resultValue.append(columnsArray)
         }
-        completion(TableEntity(lines: resultValue))
+        completion(TableEntity(rows: resultValue.map{RowEntity(values: $0)}))
     }
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 enum FileType {
-    case scv
+    case csv
 }

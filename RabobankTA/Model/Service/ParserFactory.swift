@@ -10,7 +10,7 @@ import Foundation
 class ParserFactory {
     class func getParser(_ type: FileType) -> ParserProtocol {
         switch type {
-        case .scv:
+        case .csv:
             return CSVParser()
         }
     }

@@ -11,22 +11,10 @@ class FileSelectionViewModel: ObservableObject {
     
     @Published var fileList: [URL] = []
     private var storage: StorageProtocol
-    private var parser: CSVParserProtocol
 
-    init(storage: StorageProtocol = Storage(), parser: CSVParserProtocol = CSVParser()) {
+    init(storage: StorageProtocol = Storage()) {
         self.storage = storage
-        self.parser = parser
-        
         fetchFileList()
-    }
-    
-    //MARK: -Public methods
-    func openFile(_ file: URL) {
-        guard let content = try? String(contentsOf: file) else {return}
-        parser.parseString(content) { tableValue in
-            print(tableValue)
-        }
-
     }
     
     //MARK: -Private methods
