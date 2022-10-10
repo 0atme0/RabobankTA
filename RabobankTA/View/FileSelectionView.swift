@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct FileSelectionView: View {
-    @State var files = Bundle.main.urls(forResourcesWithExtension: "csv", subdirectory: nil) ?? []
+    @ObservedObject var viewModel: FileSelectionViewModel
 
     var body: some View {
         VStack {
             Text("Rabobank Tech Assignment")
                 .font(.title)
             Menu {
-                ForEach(files, id: \.self) { element in
+                ForEach(viewModel.fileList, id: \.self) { element in
                     Button(element.lastPathComponent) {
                         openFile(element)
                     }
@@ -30,6 +30,6 @@ struct FileSelectionView: View {
 
 struct FileSelectionView_Previews: PreviewProvider {
     static var previews: some View {
-        FileSelectionView()
+        FileSelectionView(viewModel: FileSelectionViewModel(storage: Storage()))
     }
 }
