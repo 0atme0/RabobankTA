@@ -26,6 +26,7 @@
 		50E6B98628F437D500C839C7 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98528F437D500C839C7 /* FileType.swift */; };
 		50E6B98928F437EE00C839C7 /* ParserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98828F437EE00C839C7 /* ParserFactory.swift */; };
 		50E6B98B28F4388100C839C7 /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98A28F4388100C839C7 /* ParserProtocol.swift */; };
+		50E6B98E28F461D200C839C7 /* TableRepresentationView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98D28F461D200C839C7 /* TableRepresentationView+Cells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		50E6B98528F437D500C839C7 /* FileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileType.swift; sourceTree = "<group>"; };
 		50E6B98828F437EE00C839C7 /* ParserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserFactory.swift; sourceTree = "<group>"; };
 		50E6B98A28F4388100C839C7 /* ParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
+		50E6B98D28F461D200C839C7 /* TableRepresentationView+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableRepresentationView+Cells.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +169,8 @@
 		50E6B97828F414DF00C839C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				50E6B96E28F40E9B00C839C7 /* FileSelectionView.swift */,
-				50E6B98128F4361700C839C7 /* TableRepresentationView.swift */,
+				50E6B99028F461EE00C839C7 /* FileSelectionView */,
+				50E6B98F28F461E600C839C7 /* TableRepresentationView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +227,23 @@
 				50E6B98A28F4388100C839C7 /* ParserProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		50E6B98F28F461E600C839C7 /* TableRepresentationView */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B98128F4361700C839C7 /* TableRepresentationView.swift */,
+				50E6B98D28F461D200C839C7 /* TableRepresentationView+Cells.swift */,
+			);
+			path = TableRepresentationView;
+			sourceTree = "<group>";
+		};
+		50E6B99028F461EE00C839C7 /* FileSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B96E28F40E9B00C839C7 /* FileSelectionView.swift */,
+			);
+			path = FileSelectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +389,7 @@
 				50E6B97728F4141700C839C7 /* FileSelectionViewModel.swift in Sources */,
 				50E6B96F28F40E9B00C839C7 /* FileSelectionView.swift in Sources */,
 				50E6B97528F413DA00C839C7 /* Storage.swift in Sources */,
+				50E6B98E28F461D200C839C7 /* TableRepresentationView+Cells.swift in Sources */,
 				50E6B98B28F4388100C839C7 /* ParserProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
