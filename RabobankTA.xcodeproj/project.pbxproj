@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50E6B94228F40CC900C839C7 /* RabobankTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B94128F40CC900C839C7 /* RabobankTAApp.swift */; };
+		50E6B94628F40CCA00C839C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E6B94528F40CCA00C839C7 /* Assets.xcassets */; };
+		50E6B94928F40CCA00C839C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E6B94828F40CCA00C839C7 /* Preview Assets.xcassets */; };
+		50E6B95328F40CCB00C839C7 /* RabobankTATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B95228F40CCB00C839C7 /* RabobankTATests.swift */; };
+		50E6B95D28F40CCB00C839C7 /* RabobankTAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B95C28F40CCB00C839C7 /* RabobankTAUITests.swift */; };
+		50E6B95F28F40CCB00C839C7 /* RabobankTAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B95E28F40CCB00C839C7 /* RabobankTAUITestsLaunchTests.swift */; };
+		50E6B96C28F40CEC00C839C7 /* issues.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50E6B96B28F40CEB00C839C7 /* issues.csv */; };
+		50E6B96F28F40E9B00C839C7 /* FileSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B96E28F40E9B00C839C7 /* FileSelectionView.swift */; };
+		50E6B97128F410A200C839C7 /* issues_malformed.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50E6B97028F410A200C839C7 /* issues_malformed.csv */; };
+		50E6B97328F410DE00C839C7 /* issues_big.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50E6B97228F410DD00C839C7 /* issues_big.csv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50E6B94F28F40CCB00C839C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50E6B93628F40CC900C839C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50E6B93D28F40CC900C839C7;
+			remoteInfo = RabobankTA;
+		};
+		50E6B95928F40CCB00C839C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50E6B93628F40CC900C839C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50E6B93D28F40CC900C839C7;
+			remoteInfo = RabobankTA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50E6B93E28F40CC900C839C7 /* RabobankTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabobankTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E6B94128F40CC900C839C7 /* RabobankTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabobankTAApp.swift; sourceTree = "<group>"; };
+		50E6B94528F40CCA00C839C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50E6B94828F40CCA00C839C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50E6B94E28F40CCA00C839C7 /* RabobankTATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RabobankTATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E6B95228F40CCB00C839C7 /* RabobankTATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabobankTATests.swift; sourceTree = "<group>"; };
+		50E6B95828F40CCB00C839C7 /* RabobankTAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RabobankTAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E6B95C28F40CCB00C839C7 /* RabobankTAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabobankTAUITests.swift; sourceTree = "<group>"; };
+		50E6B95E28F40CCB00C839C7 /* RabobankTAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabobankTAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50E6B96B28F40CEB00C839C7 /* issues.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = issues.csv; sourceTree = "<group>"; };
+		50E6B96E28F40E9B00C839C7 /* FileSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSelectionView.swift; sourceTree = "<group>"; };
+		50E6B97028F410A200C839C7 /* issues_malformed.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = issues_malformed.csv; sourceTree = "<group>"; };
+		50E6B97228F410DD00C839C7 /* issues_big.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = issues_big.csv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50E6B93B28F40CC900C839C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E6B94B28F40CCA00C839C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E6B95528F40CCB00C839C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50E6B93528F40CC900C839C7 = {
+			isa = PBXGroup;
+			children = (
+				50E6B94028F40CC900C839C7 /* RabobankTA */,
+				50E6B95128F40CCB00C839C7 /* RabobankTATests */,
+				50E6B95B28F40CCB00C839C7 /* RabobankTAUITests */,
+				50E6B93F28F40CC900C839C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50E6B93F28F40CC900C839C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B93E28F40CC900C839C7 /* RabobankTA.app */,
+				50E6B94E28F40CCA00C839C7 /* RabobankTATests.xctest */,
+				50E6B95828F40CCB00C839C7 /* RabobankTAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50E6B94028F40CC900C839C7 /* RabobankTA */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B96D28F40D6900C839C7 /* Resources */,
+				50E6B94128F40CC900C839C7 /* RabobankTAApp.swift */,
+				50E6B96E28F40E9B00C839C7 /* FileSelectionView.swift */,
+				50E6B94528F40CCA00C839C7 /* Assets.xcassets */,
+				50E6B94728F40CCA00C839C7 /* Preview Content */,
+			);
+			path = RabobankTA;
+			sourceTree = "<group>";
+		};
+		50E6B94728F40CCA00C839C7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B94828F40CCA00C839C7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50E6B95128F40CCB00C839C7 /* RabobankTATests */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B95228F40CCB00C839C7 /* RabobankTATests.swift */,
+			);
+			path = RabobankTATests;
+			sourceTree = "<group>";
+		};
+		50E6B95B28F40CCB00C839C7 /* RabobankTAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B95C28F40CCB00C839C7 /* RabobankTAUITests.swift */,
+				50E6B95E28F40CCB00C839C7 /* RabobankTAUITestsLaunchTests.swift */,
+			);
+			path = RabobankTAUITests;
+			sourceTree = "<group>";
+		};
+		50E6B96D28F40D6900C839C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B96B28F40CEB00C839C7 /* issues.csv */,
+				50E6B97228F410DD00C839C7 /* issues_big.csv */,
+				50E6B97028F410A200C839C7 /* issues_malformed.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50E6B93D28F40CC900C839C7 /* RabobankTA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E6B96228F40CCB00C839C7 /* Build configuration list for PBXNativeTarget "RabobankTA" */;
+			buildPhases = (
+				50E6B93A28F40CC900C839C7 /* Sources */,
+				50E6B93B28F40CC900C839C7 /* Frameworks */,
+				50E6B93C28F40CC900C839C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RabobankTA;
+			productName = RabobankTA;
+			productReference = 50E6B93E28F40CC900C839C7 /* RabobankTA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50E6B94D28F40CCA00C839C7 /* RabobankTATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E6B96528F40CCB00C839C7 /* Build configuration list for PBXNativeTarget "RabobankTATests" */;
+			buildPhases = (
+				50E6B94A28F40CCA00C839C7 /* Sources */,
+				50E6B94B28F40CCA00C839C7 /* Frameworks */,
+				50E6B94C28F40CCA00C839C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50E6B95028F40CCB00C839C7 /* PBXTargetDependency */,
+			);
+			name = RabobankTATests;
+			productName = RabobankTATests;
+			productReference = 50E6B94E28F40CCA00C839C7 /* RabobankTATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50E6B95728F40CCB00C839C7 /* RabobankTAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E6B96828F40CCB00C839C7 /* Build configuration list for PBXNativeTarget "RabobankTAUITests" */;
+			buildPhases = (
+				50E6B95428F40CCB00C839C7 /* Sources */,
+				50E6B95528F40CCB00C839C7 /* Frameworks */,
+				50E6B95628F40CCB00C839C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50E6B95A28F40CCB00C839C7 /* PBXTargetDependency */,
+			);
+			name = RabobankTAUITests;
+			productName = RabobankTAUITests;
+			productReference = 50E6B95828F40CCB00C839C7 /* RabobankTAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50E6B93628F40CC900C839C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					50E6B93D28F40CC900C839C7 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					50E6B94D28F40CCA00C839C7 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 50E6B93D28F40CC900C839C7;
+					};
+					50E6B95728F40CCB00C839C7 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 50E6B93D28F40CC900C839C7;
+					};
+				};
+			};
+			buildConfigurationList = 50E6B93928F40CC900C839C7 /* Build configuration list for PBXProject "RabobankTA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50E6B93528F40CC900C839C7;
+			productRefGroup = 50E6B93F28F40CC900C839C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50E6B93D28F40CC900C839C7 /* RabobankTA */,
+				50E6B94D28F40CCA00C839C7 /* RabobankTATests */,
+				50E6B95728F40CCB00C839C7 /* RabobankTAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50E6B93C28F40CC900C839C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E6B97128F410A200C839C7 /* issues_malformed.csv in Resources */,
+				50E6B96C28F40CEC00C839C7 /* issues.csv in Resources */,
+				50E6B94928F40CCA00C839C7 /* Preview Assets.xcassets in Resources */,
+				50E6B97328F410DE00C839C7 /* issues_big.csv in Resources */,
+				50E6B94628F40CCA00C839C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E6B94C28F40CCA00C839C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E6B95628F40CCB00C839C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50E6B93A28F40CC900C839C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E6B94228F40CC900C839C7 /* RabobankTAApp.swift in Sources */,
+				50E6B96F28F40E9B00C839C7 /* FileSelectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E6B94A28F40CCA00C839C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E6B95328F40CCB00C839C7 /* RabobankTATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E6B95428F40CCB00C839C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E6B95D28F40CCB00C839C7 /* RabobankTAUITests.swift in Sources */,
+				50E6B95F28F40CCB00C839C7 /* RabobankTAUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50E6B95028F40CCB00C839C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50E6B93D28F40CC900C839C7 /* RabobankTA */;
+			targetProxy = 50E6B94F28F40CCB00C839C7 /* PBXContainerItemProxy */;
+		};
+		50E6B95A28F40CCB00C839C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50E6B93D28F40CC900C839C7 /* RabobankTA */;
+			targetProxy = 50E6B95928F40CCB00C839C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50E6B96028F40CCB00C839C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50E6B96128F40CCB00C839C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50E6B96328F40CCB00C839C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RabobankTA/Preview Content\"";
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.RabobankTA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50E6B96428F40CCB00C839C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RabobankTA/Preview Content\"";
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.RabobankTA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50E6B96628F40CCB00C839C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.RabobankTATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RabobankTA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RabobankTA";
+			};
+			name = Debug;
+		};
+		50E6B96728F40CCB00C839C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.RabobankTATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RabobankTA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RabobankTA";
+			};
+			name = Release;
+		};
+		50E6B96928F40CCB00C839C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.RabobankTAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RabobankTA;
+			};
+			name = Debug;
+		};
+		50E6B96A28F40CCB00C839C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7R6ZCLV57;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = atme.RabobankTAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RabobankTA;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50E6B93928F40CC900C839C7 /* Build configuration list for PBXProject "RabobankTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E6B96028F40CCB00C839C7 /* Debug */,
+				50E6B96128F40CCB00C839C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50E6B96228F40CCB00C839C7 /* Build configuration list for PBXNativeTarget "RabobankTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E6B96328F40CCB00C839C7 /* Debug */,
+				50E6B96428F40CCB00C839C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50E6B96528F40CCB00C839C7 /* Build configuration list for PBXNativeTarget "RabobankTATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E6B96628F40CCB00C839C7 /* Debug */,
+				50E6B96728F40CCB00C839C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50E6B96828F40CCB00C839C7 /* Build configuration list for PBXNativeTarget "RabobankTAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E6B96928F40CCB00C839C7 /* Debug */,
+				50E6B96A28F40CCB00C839C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50E6B93628F40CC900C839C7 /* Project object */;
+}
