@@ -9,44 +9,19 @@ import SwiftUI
 
 struct FileSelectionView: View {
     @ObservedObject var viewModel: FileSelectionViewModel
-    @State private var currentTable: TableEntity?
-    @State var isLoading: URL?
     var body: some View {
-        VStack {
-            Text("RABOBANK TECH ASSIGNMENT")
-                .font(.title)
-                .multilineTextAlignment(.center)
-                .padding()
-            Label("Choose a CSV file to open", systemImage: "filemenu.and.cursorarrow")
-                .padding()
-            ScrollView {
-                VStack(alignment: .leading) {
-                    ForEach(viewModel.fileList, id: \.self) { element in
-                        HStack {
-                            Label(element.lastPathComponent, systemImage: "filemenu.and.selection")
-                            if isLoading == element {
-                                ProgressView()
-                                    .padding(.horizontal)
-                            }
-                        }
+        content
+            .overlay(alignment: .bottom) {
+                if let error = viewModel.error {
+                    Text("Error: \(error)")
+                        .foregroundColor(.white)
                         .padding()
-                        .clipShape(Rectangle())
-                        .onTapGesture {
-                            isLoading = element
-                            viewModel.openFile(element) { table in
-                                self.isLoading = nil
-                                self.currentTable = table
-                            }
-                        }
-                    }
+                        .background(RoundedRectangle(cornerRadius: 5).foregroundColor(.black))
                 }
-                .padding()
-                .background(RoundedRectangle(cornerRadius: 5).stroke(lineWidth: 1))
             }
-        }
-        .fullScreenCover(item: $currentTable) { table in
-            TableRepresentationView(viewModel: TableRepresentationViewModel(table))
-        }
+            .fullScreenCover(item: $viewModel.currentTable) { table in
+                TableRepresentationView(viewModel: TableRepresentationViewModel(table))
+            }
     }
 }
 

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		50686B4428F6E03D00FB538C /* TableRepresentationView+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50686B4328F6E03D00FB538C /* TableRepresentationView+Content.swift */; };
+		50686B4728F6FB4B00FB538C /* FileSelectionView+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50686B4628F6FB4B00FB538C /* FileSelectionView+Content.swift */; };
+		50686B4928F6FBAF00FB538C /* String+Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50686B4828F6FBAF00FB538C /* String+Quotes.swift */; };
+		50686B4B28F7052C00FB538C /* String+Whitespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50686B4A28F7052C00FB538C /* String+Whitespace.swift */; };
+		50686B4D28F7077000FB538C /* 1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50686B4C28F7077000FB538C /* 1.csv */; };
+		50686B5128F70E3700FB538C /* 1 copy.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50686B5028F70E2600FB538C /* 1 copy.csv */; };
 		50E6B94228F40CC900C839C7 /* RabobankTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B94128F40CC900C839C7 /* RabobankTAApp.swift */; };
 		50E6B94628F40CCA00C839C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E6B94528F40CCA00C839C7 /* Assets.xcassets */; };
 		50E6B94928F40CCA00C839C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E6B94828F40CCA00C839C7 /* Preview Assets.xcassets */; };
@@ -49,6 +54,11 @@
 
 /* Begin PBXFileReference section */
 		50686B4328F6E03D00FB538C /* TableRepresentationView+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableRepresentationView+Content.swift"; sourceTree = "<group>"; };
+		50686B4628F6FB4B00FB538C /* FileSelectionView+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileSelectionView+Content.swift"; sourceTree = "<group>"; };
+		50686B4828F6FBAF00FB538C /* String+Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Quotes.swift"; sourceTree = "<group>"; };
+		50686B4A28F7052C00FB538C /* String+Whitespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Whitespace.swift"; sourceTree = "<group>"; };
+		50686B4C28F7077000FB538C /* 1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = 1.csv; sourceTree = "<group>"; };
+		50686B5028F70E2600FB538C /* 1 copy.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "1 copy.csv"; sourceTree = "<group>"; };
 		50E6B93E28F40CC900C839C7 /* RabobankTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabobankTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E6B94128F40CC900C839C7 /* RabobankTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabobankTAApp.swift; sourceTree = "<group>"; };
 		50E6B94528F40CCA00C839C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +147,8 @@
 				50E6B97A28F414EC00C839C7 /* Model */,
 				50E6B94528F40CCA00C839C7 /* Assets.xcassets */,
 				50E6B94728F40CCA00C839C7 /* Preview Content */,
+				50686B4828F6FBAF00FB538C /* String+Quotes.swift */,
+				50686B4A28F7052C00FB538C /* String+Whitespace.swift */,
 			);
 			path = RabobankTA;
 			sourceTree = "<group>";
@@ -172,6 +184,8 @@
 				50E6B96B28F40CEB00C839C7 /* issues.csv */,
 				50E6B97228F410DD00C839C7 /* issues_big.csv */,
 				50E6B97028F410A200C839C7 /* issues_malformed.csv */,
+				50686B5028F70E2600FB538C /* 1 copy.csv */,
+				50686B4C28F7077000FB538C /* 1.csv */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -253,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				50E6B96E28F40E9B00C839C7 /* FileSelectionView.swift */,
+				50686B4628F6FB4B00FB538C /* FileSelectionView+Content.swift */,
 			);
 			path = FileSelectionView;
 			sourceTree = "<group>";
@@ -361,7 +376,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50686B4D28F7077000FB538C /* 1.csv in Resources */,
 				50E6B97128F410A200C839C7 /* issues_malformed.csv in Resources */,
+				50686B5128F70E3700FB538C /* 1 copy.csv in Resources */,
 				50E6B96C28F40CEC00C839C7 /* issues.csv in Resources */,
 				50E6B94928F40CCA00C839C7 /* Preview Assets.xcassets in Resources */,
 				50E6B97328F410DE00C839C7 /* issues_big.csv in Resources */,
@@ -390,11 +407,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50686B4928F6FBAF00FB538C /* String+Quotes.swift in Sources */,
+				50686B4B28F7052C00FB538C /* String+Whitespace.swift in Sources */,
 				50E6B98228F4361700C839C7 /* TableRepresentationView.swift in Sources */,
 				50E6B98928F437EE00C839C7 /* ParserFactory.swift in Sources */,
 				50E6B97C28F4180600C839C7 /* CSVParser.swift in Sources */,
 				50E6B98428F4362A00C839C7 /* TableRepresentationViewModel.swift in Sources */,
 				50E6B97E28F4185400C839C7 /* TableEntity.swift in Sources */,
+				50686B4728F6FB4B00FB538C /* FileSelectionView+Content.swift in Sources */,
 				50E6B98628F437D500C839C7 /* FileType.swift in Sources */,
 				50686B4428F6E03D00FB538C /* TableRepresentationView+Content.swift in Sources */,
 				50E6B94228F40CC900C839C7 /* RabobankTAApp.swift in Sources */,

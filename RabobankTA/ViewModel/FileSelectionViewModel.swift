@@ -10,6 +10,9 @@ import Foundation
 class FileSelectionViewModel: ObservableObject {
     
     @Published var fileList: [URL] = []
+    @Published var error: String?
+    @Published var currentTable: TableEntity?
+    @Published var isLoading: URL?
     var cache = [URL: TableEntity]()
     private var storage: StorageProtocol
     private var parser: ParserProtocol
@@ -32,9 +35,18 @@ class FileSelectionViewModel: ObservableObject {
             completion(table)
             return
         }
-        self.parser.parseFile(url) { [weak self] table in
-            self?.cache[url] = table
-            completion(table)
+        //otherwise
+        self.parser.parseFile(url) { [weak self] result in
+            switch result {
+            case .success(let table):
+                self?.cache[url] = table
+                completion(table)
+            case .failure(let error):
+                self?.error = error.localizedDescription
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self?.error = nil
+                }
+            }
         }
     }
     
