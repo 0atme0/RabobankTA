@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ParserProtocol {
-    func parseString(_ value: String, completion: @escaping (TableEntity)->())
+    func parseFile(_ url: URL, completion: @escaping (TableEntity)->())
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50686B4428F6E03D00FB538C /* TableRepresentationView+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50686B4328F6E03D00FB538C /* TableRepresentationView+Content.swift */; };
 		50E6B94228F40CC900C839C7 /* RabobankTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B94128F40CC900C839C7 /* RabobankTAApp.swift */; };
 		50E6B94628F40CCA00C839C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E6B94528F40CCA00C839C7 /* Assets.xcassets */; };
 		50E6B94928F40CCA00C839C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E6B94828F40CCA00C839C7 /* Preview Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50686B4328F6E03D00FB538C /* TableRepresentationView+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableRepresentationView+Content.swift"; sourceTree = "<group>"; };
 		50E6B93E28F40CC900C839C7 /* RabobankTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabobankTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E6B94128F40CC900C839C7 /* RabobankTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabobankTAApp.swift; sourceTree = "<group>"; };
 		50E6B94528F40CCA00C839C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50686B4528F6EA8400FB538C /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				50E6B97B28F4180500C839C7 /* CSVParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
 		50E6B93528F40CC900C839C7 = {
 			isa = PBXGroup;
 			children = (
@@ -207,8 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				50E6B97428F413DA00C839C7 /* Storage.swift */,
-				50E6B97B28F4180500C839C7 /* CSVParser.swift */,
 				50E6B98828F437EE00C839C7 /* ParserFactory.swift */,
+				50686B4528F6EA8400FB538C /* Parsers */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -233,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				50E6B98128F4361700C839C7 /* TableRepresentationView.swift */,
+				50686B4328F6E03D00FB538C /* TableRepresentationView+Content.swift */,
 				50E6B98D28F461D200C839C7 /* TableRepresentationView+Cells.swift */,
 			);
 			path = TableRepresentationView;
@@ -385,6 +396,7 @@
 				50E6B98428F4362A00C839C7 /* TableRepresentationViewModel.swift in Sources */,
 				50E6B97E28F4185400C839C7 /* TableEntity.swift in Sources */,
 				50E6B98628F437D500C839C7 /* FileType.swift in Sources */,
+				50686B4428F6E03D00FB538C /* TableRepresentationView+Content.swift in Sources */,
 				50E6B94228F40CC900C839C7 /* RabobankTAApp.swift in Sources */,
 				50E6B97728F4141700C839C7 /* FileSelectionViewModel.swift in Sources */,
 				50E6B96F28F40E9B00C839C7 /* FileSelectionView.swift in Sources */,

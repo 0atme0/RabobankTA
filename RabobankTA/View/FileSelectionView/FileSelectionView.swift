@@ -9,25 +9,43 @@ import SwiftUI
 
 struct FileSelectionView: View {
     @ObservedObject var viewModel: FileSelectionViewModel
-    @State private var isNavigationActive = false
-    
+    @State private var currentTable: TableEntity?
+    @State var isLoading: URL?
     var body: some View {
-        NavigationStack {
-            VStack {
-                Menu {
+        VStack {
+            Text("RABOBANK TECH ASSIGNMENT")
+                .font(.title)
+                .multilineTextAlignment(.center)
+                .padding()
+            Label("Choose a CSV file to open", systemImage: "filemenu.and.cursorarrow")
+                .padding()
+            ScrollView {
+                VStack(alignment: .leading) {
                     ForEach(viewModel.fileList, id: \.self) { element in
-                        NavigationLink(element.lastPathComponent, value: element)
+                        HStack {
+                            Label(element.lastPathComponent, systemImage: "filemenu.and.selection")
+                            if isLoading == element {
+                                ProgressView()
+                                    .padding(.horizontal)
+                            }
+                        }
+                        .padding()
+                        .clipShape(Rectangle())
+                        .onTapGesture {
+                            isLoading = element
+                            viewModel.openFile(element) { table in
+                                self.isLoading = nil
+                                self.currentTable = table
+                            }
+                        }
                     }
-                } label: {
-                    Label("Choose a CSV file to open", systemImage: "filemenu.and.cursorarrow")
                 }
-                .navigationBarTitle("Rabobank Tech Assignment")
-                .navigationBarTitleDisplayMode(.inline)
-                .navigationDestination(for: URL.self) { url in
-                    TableRepresentationView(viewModel: TableRepresentationViewModel(fileURL: url))
-                }
-
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 5).stroke(lineWidth: 1))
             }
+        }
+        .fullScreenCover(item: $currentTable) { table in
+            TableRepresentationView(viewModel: TableRepresentationViewModel(table))
         }
     }
 }

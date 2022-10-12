@@ -10,19 +10,8 @@ import Foundation
 class TableRepresentationViewModel: ObservableObject {
     
     @Published var table: TableEntity?
-    private var parser: ParserProtocol
-
-    init(fileURL: URL, parser: ParserProtocol = ParserFactory.getParser(.csv)) {
-        print(fileURL)
-        self.parser = parser
-        openFile(fileURL)
-    }
     
-    //MARK: -Private methods
-    private func openFile(_ file: URL) {
-        guard let content = try? String(contentsOf: file) else {return}
-        parser.parseString(content) { tableValue in
-            self.table = tableValue
-        }
+    init(_ table: TableEntity?) {
+        self.table = table
     }
 }

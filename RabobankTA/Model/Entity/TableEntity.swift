@@ -5,22 +5,24 @@
 //  Created by atme on 10/10/2022.
 //
 
-import Foundation
+import SwiftUI
 
 struct RowEntity: Identifiable, Hashable {
     var id = UUID()
     var values: [String] = []
 }
 
-struct TableEntity {
+class TableEntity: ObservableObject, Identifiable {
     
-    var rows: [RowEntity]
-    var columnsInHeader: RowEntity
-    var rowsWOHeader: [RowEntity]
+    @Published var rows: [RowEntity]
+    @Published var columnsInHeader: RowEntity
+    @Published var rowsWOHeader: [RowEntity] = []
     
     init(rows: [RowEntity]) {
         self.rows = rows
         self.columnsInHeader = rows.first ?? RowEntity()
-        self.rowsWOHeader = Array(rows.suffix(rows.count - 1))
+        if rows.count > 0 {
+            self.rowsWOHeader = Array(rows.suffix(rows.count - 1))
+        }
     }
 }
