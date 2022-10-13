@@ -20,7 +20,7 @@ struct FileSelectionView: View {
                 }
             }
             .fullScreenCover(item: $viewModel.currentTable) { table in
-                TableRepresentationView(viewModel: TableRepresentationViewModel(table))
+                TableRepresentationView(viewModel: TableRepresentationViewModel(table), isPresented: $viewModel.currentTable)
             }
     }
 }

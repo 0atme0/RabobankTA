@@ -21,10 +21,10 @@ extension TableRepresentationView {
         }
     }
     struct RowView: View {
-        @State var text: String
+        @State var text: String?
         var body: some View {
             VStack {
-                Text(text)
+                Text(text ?? "-")
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .frame(height: 80)

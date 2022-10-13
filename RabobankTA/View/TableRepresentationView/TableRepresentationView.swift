@@ -9,13 +9,13 @@ import SwiftUI
 
 struct TableRepresentationView: View {
     @ObservedObject var viewModel: TableRepresentationViewModel
-    @Environment(\.dismiss) var dismiss
+    @Binding var isPresented: TableEntity?
     var body: some View {
         NavigationView {
             content
                 .toolbar {
                     Button("Done") {
-                        dismiss()
+                        isPresented = nil
                     }
                 }
         }
@@ -24,6 +24,6 @@ struct TableRepresentationView: View {
 
 struct TableRepresentationView_Previews: PreviewProvider {
     static var previews: some View {
-        TableRepresentationView(viewModel: TableRepresentationViewModel(TableEntity(rows: [])))
+        TableRepresentationView(viewModel: TableRepresentationViewModel(TableEntity(rows: [])), isPresented: .constant(nil))
     }
 }
