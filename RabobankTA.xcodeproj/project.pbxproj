@@ -34,6 +34,7 @@
 		50E6B98B28F4388100C839C7 /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98A28F4388100C839C7 /* ParserProtocol.swift */; };
 		50E6B98E28F461D200C839C7 /* TableRepresentationView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6B98D28F461D200C839C7 /* TableRepresentationView+Cells.swift */; };
 		50F824B828FC11DC0016DE25 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F824B728FC11DC0016DE25 /* Error.swift */; };
+		50F824BA28FC2E620016DE25 /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F824B928FC2E620016DE25 /* StorageProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		50E6B98A28F4388100C839C7 /* ParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
 		50E6B98D28F461D200C839C7 /* TableRepresentationView+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableRepresentationView+Cells.swift"; sourceTree = "<group>"; };
 		50F824B728FC11DC0016DE25 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		50F824B928FC2E620016DE25 /* StorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				50E6B98A28F4388100C839C7 /* ParserProtocol.swift */,
+				50F824B928FC2E620016DE25 /* StorageProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				50E6B97C28F4180600C839C7 /* CSVParser.swift in Sources */,
 				50E6B98428F4362A00C839C7 /* TableRepresentationViewModel.swift in Sources */,
 				50E6B97E28F4185400C839C7 /* TableEntity.swift in Sources */,
+				50F824BA28FC2E620016DE25 /* StorageProtocol.swift in Sources */,
 				50686B4728F6FB4B00FB538C /* FileSelectionView+Content.swift in Sources */,
 				50E6B98628F437D500C839C7 /* FileType.swift in Sources */,
 				50F824B828FC11DC0016DE25 /* Error.swift in Sources */,

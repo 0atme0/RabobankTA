@@ -7,11 +7,10 @@
 
 import Foundation
 
-protocol StorageProtocol {
-    func getFileList() -> [URL]
-}
-
 class Storage: StorageProtocol {
+    
+    /// method returns all csv files
+    /// - Returns: array of csv files pathes
     func getFileList() -> [URL] {
         Bundle.main.urls(forResourcesWithExtension: "csv", subdirectory: nil) ?? []
     }
