@@ -7,9 +7,6 @@
 
 import Foundation
 
-typealias TableEntityResult = Result<TableEntity, Error>
-typealias TableEntityResultCompletion = (TableEntityResult)->()
-
 protocol ParserProtocol {
-    func parseFile(_ url: URL, completion: @escaping TableEntityResultCompletion)
+    func parseFile(_ url: URL) async throws -> TableEntity
 }

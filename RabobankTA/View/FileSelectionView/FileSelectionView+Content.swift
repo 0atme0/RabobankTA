@@ -28,13 +28,7 @@ extension FileSelectionView {
                         }
                         .padding()
                         .clipShape(Rectangle())
-                        .onTapGesture {
-                            viewModel.isLoading = element
-                            viewModel.openFile(element) { table in
-                                self.viewModel.isLoading = nil
-                                self.viewModel.currentTable = table
-                            }
-                        }
+                        .onTapGesture {viewModel.tapOnFile(element)}
                     }
                 }
                 .padding()

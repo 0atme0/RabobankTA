@@ -27,27 +27,38 @@ class FileSelectionViewModel: ObservableObject {
     private func fetchFileList() {
         self.fileList = storage.getFileList()
     }
-    
-    //MARK: -Public methods
-    func openFile(_ url: URL, completion: @escaping (TableEntity)->()) {
+    private func handleError(_ errorText: String) {
+        self.error = errorText
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.error = nil
+        }
+    }
+    private func openFile(_ url: URL) async -> TableEntity? {
         //check cache
         if let table = cache[url] {
-            completion(table)
-            return
+            return table
         }
         //otherwise
-        self.parser.parseFile(url) { [weak self] result in
-            switch result {
-            case .success(let table):
-                self?.cache[url] = table
-                completion(table)
-            case .failure(let error):
-                self?.error = error.localizedDescription
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    self?.error = nil
-                }
+        if let table = try? await self.parser.parseFile(url) {
+            self.cache[url] = table
+            return table
+        } else {
+            self.handleError(Error.failedToParse)
+        }
+        return nil
+    }
+    
+    //MARK: -Public methods
+    func tapOnFile(_ url: URL) {
+        Task {
+            await MainActor.run {
+                self.isLoading = url
+            }
+            let table = await self.openFile(url)
+            await MainActor.run {
+                self.isLoading = nil
+                self.currentTable = table
             }
         }
     }
-    
 }

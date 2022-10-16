@@ -8,17 +8,12 @@
 import Foundation
 
 class CSVParser: ParserProtocol {
-    func parseFile(_ url: URL,  completion: @escaping TableEntityResultCompletion) {
-        DispatchQueue.global(qos: .userInitiated).async {
-            var resultValue = [[String]]()
-            
-            guard let data = try? Data(contentsOf: url) else {return}
-            let str = String(decoding: data, as: UTF8.self)
-            resultValue = self.parseCsv(str)
-            DispatchQueue.main.async {
-                completion(.success(TableEntity(rows: resultValue.map{RowEntity(values: $0)})))
-            }
-        }
+    func parseFile(_ url: URL) async throws -> TableEntity {
+        var resultValue = [[String]]()
+        let data = try Data(contentsOf: url)
+        let str = String(decoding: data, as: UTF8.self)
+        resultValue = self.parseCsv(str)
+        return TableEntity(rows: resultValue.map{RowEntity(values: $0)})
     }
     func parseCsv(_ string: String, separator: Character = ",") -> [[String]] {
         if string.count < 2 {
