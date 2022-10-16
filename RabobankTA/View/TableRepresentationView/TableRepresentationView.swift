@@ -17,6 +17,8 @@ struct TableRepresentationView: View {
                     Button("Done") {
                         isPresented = nil
                     }
+                    .foregroundColor(.black)
+                    .buttonStyle(.bordered)
                 }
         }
     }

@@ -9,21 +9,24 @@ import SwiftUI
 
 extension TableRepresentationView {
     var content: some View {
-        ScrollView {
-            LazyVStack {
-                if viewModel.table?.withHeader ?? true {
-                    HStack(spacing: 1) {
-                        ForEach(viewModel.table?.columnsInHeader?.values ?? [], id: \.self) { item in
-                            HeaderView(text: item)
-                        }
-                    }
-                ForEach(viewModel.table?.keyedRows ?? [], id: \.self) { row in
-                    HStack(spacing: 1) {
-                        ForEach(viewModel.table?.columnsInHeader?.values ?? [], id: \.self) { item in
-                            RowView(text: row[item])
-                        }
+        VStack(spacing: 0) {
+            if viewModel.table?.withHeader ?? true {
+                HStack(spacing: 1) {
+                    ForEach(viewModel.table?.columnsInHeader?.values ?? [], id: \.self) { item in
+                        HeaderView(text: item)
                     }
                 }
+                .padding(.top)
+                ScrollView {
+                    LazyVStack(spacing: 0) {
+                        ForEach(Array(zip((viewModel.table?.keyedRows ?? []).indices, viewModel.table?.keyedRows ?? [])), id: \.0) { index, row in
+                            HStack(spacing: 1) {
+                                ForEach(viewModel.table?.columnsInHeader?.values ?? [], id: \.self) { item in
+                                    RowView(text: row[item])
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

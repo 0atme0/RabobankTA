@@ -13,11 +13,12 @@ extension TableRepresentationView {
         var body: some View {
             VStack {
                 Text(text)
+                    .bold()
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .frame(height: 80)
-            .background(Color.green)
-            
+            .padding()
+            .background(Rectangle().stroke(lineWidth: 1))
         }
     }
     struct RowView: View {
@@ -25,9 +26,12 @@ extension TableRepresentationView {
         var body: some View {
             VStack {
                 Text(text ?? "-")
+                    .font(.caption)
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .frame(height: 80)
+            .padding()
+            .background(Rectangle().stroke(lineWidth: 1))
         }
     }
 }
