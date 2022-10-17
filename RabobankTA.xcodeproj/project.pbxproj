@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		505BC56B28FD42FC0049E8D8 /* FileCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505BC56A28FD42FC0049E8D8 /* FileCellView.swift */; };
 		50686B4428F6E03D00FB538C /* TableRepresentationView+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50686B4328F6E03D00FB538C /* TableRepresentationView+Content.swift */; };
 		50686B4728F6FB4B00FB538C /* FileSelectionView+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50686B4628F6FB4B00FB538C /* FileSelectionView+Content.swift */; };
 		50686B4928F6FBAF00FB538C /* String+Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50686B4828F6FBAF00FB538C /* String+Quotes.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		505BC56A28FD42FC0049E8D8 /* FileCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCellView.swift; sourceTree = "<group>"; };
 		50686B4328F6E03D00FB538C /* TableRepresentationView+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableRepresentationView+Content.swift"; sourceTree = "<group>"; };
 		50686B4628F6FB4B00FB538C /* FileSelectionView+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileSelectionView+Content.swift"; sourceTree = "<group>"; };
 		50686B4828F6FBAF00FB538C /* String+Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Quotes.swift"; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			children = (
 				50E6B96E28F40E9B00C839C7 /* FileSelectionView.swift */,
 				50686B4628F6FB4B00FB538C /* FileSelectionView+Content.swift */,
+				505BC56A28FD42FC0049E8D8 /* FileCellView.swift */,
 			);
 			path = FileSelectionView;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				50686B4728F6FB4B00FB538C /* FileSelectionView+Content.swift in Sources */,
 				50E6B98628F437D500C839C7 /* FileType.swift in Sources */,
 				50F824B828FC11DC0016DE25 /* Error.swift in Sources */,
+				505BC56B28FD42FC0049E8D8 /* FileCellView.swift in Sources */,
 				50686B4428F6E03D00FB538C /* TableRepresentationView+Content.swift in Sources */,
 				50E6B94228F40CC900C839C7 /* RabobankTAApp.swift in Sources */,
 				50E6B97728F4141700C839C7 /* FileSelectionViewModel.swift in Sources */,

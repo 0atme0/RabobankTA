@@ -19,16 +19,8 @@ extension FileSelectionView {
             ScrollView {
                 VStack(alignment: .leading) {
                     ForEach(viewModel.fileList, id: \.self) { element in
-                        HStack {
-                            Label(element.lastPathComponent, systemImage: "filemenu.and.selection")
-                            if viewModel.isLoading == element {
-                                ProgressView()
-                                    .padding(.horizontal)
-                            }
-                        }
-                        .padding()
-                        .clipShape(Rectangle())
-                        .onTapGesture {viewModel.tapOnFile(element)}
+                        FileCellView(file: element, isLoadingURL: $viewModel.isLoading)
+                            .onTapGesture {viewModel.tapOnFile(element)}
                     }
                 }
                 .padding()
